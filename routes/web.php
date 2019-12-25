@@ -12,11 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/intro', function () {
+    return view('intro');
+});
+
+Route::get('/test', function () {
+    return view('test');
 });
 
 Auth::routes();
 
 Route::get('/home', function() {
-    return view('home');
-})->name('home')->middleware('auth');
+    return view('adminhome');
+})->name('adminhome')->middleware('auth');

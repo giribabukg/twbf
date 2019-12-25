@@ -1,19 +1,20 @@
-@extends('adminlte::page')
-
-@section('title', 'AdminLTE')
-
-@section('content_header')
-    <h1 class="m-0 text-dark">Dashboard</h1>
-@stop
+@extends('layouts.fronthome')
 
 @section('content')
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <p class="mb-0">You are logged in!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-@stop
+    <section id="introduction" class="tm-section-pad-top">
+        @include('intro')
+    </section>
+    <section id="work" class="tm-section-pad-top">
+      @include('work')
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      @include('contact')
+      <footer class="text-center small tm-footer">
+          <p class="mb-0">
+            Copyright &copy; 2019 Company Name - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+          </p>
+        </footer>
+    </section>
+@endsection
