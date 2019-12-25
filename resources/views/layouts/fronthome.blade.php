@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="#hero" class="navbar-brand">The Town</a>
+              <a href="{{ url('/') }}" class="navbar-brand">The Town</a>
           </div>             
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,11 @@
                   <a class="nav-link tm-nav-link" href="#work">Our Work</a>
               </li>
               <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="{{ url('/test') }}">Register</a>
+              </li>
+              <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
-              </li>                    
+              </li>
             </ul>
           </div>        
         </div>
@@ -153,7 +156,7 @@
         })
 
         // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav();        
+        // $('#tmNav').singlePageNav();
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp

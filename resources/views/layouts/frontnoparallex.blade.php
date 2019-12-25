@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-md tm-navbar scroll" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="{{ route('/home') }}" class="navbar-brand">The Town</a>
+              <a href="{{ url('/') }}" class="navbar-brand">The Town</a>
           </div>             
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,14 +32,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#introduction">Introduction</a>
+                  <a class="nav-link tm-nav-link" href="{{ url('/') }}">Introduction</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#work">Our Work</a>
+                  <a class="nav-link tm-nav-link" href="{{ url('/') }}">Our Work</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
-              </li>                    
+                  <a class="nav-link tm-nav-link" href="{{ url('/test') }}">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="{{ url('/') }}">Contact Us</a>
+              </li>
             </ul>
           </div>        
         </div>
@@ -139,7 +142,7 @@
         })
 
         // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav();        
+        // $('#tmNav').singlePageNav();        
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
