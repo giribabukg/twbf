@@ -38,7 +38,7 @@
                   <a class="nav-link tm-nav-link" href="{{ url('/') }}">Our Work</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="{{ url('/test') }}">Register</a>
+                  <a class="nav-link tm-nav-link" href="{{ url('/register') }}">Register</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="{{ url('/') }}">Contact Us</a>

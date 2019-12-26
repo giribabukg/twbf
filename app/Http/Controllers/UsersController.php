@@ -19,9 +19,7 @@ class UsersController extends Controller
   }
 
   public function index() {
-
-		// Role :: create(['name' => 'admin']);
-		return view('index');
-
+		$users = User::latest()->paginate(3);
+		return view('index',compact('users'))->with('i', (request()->input('page', 1) - 1) * 3);
   }
 }
