@@ -23,6 +23,8 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/admin/users', 'UsersController@index') -> name('index');
+
 Auth::routes();
 
 Route::get('/home', function() {
