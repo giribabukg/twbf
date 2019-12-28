@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>The Town HTML CSS Template</title>
+    <title>TWBF - The World Brahmin Foundation</title>
     <link rel="stylesheet" href="{{ asset('public/vendor/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/vendor/frontend_design/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/vendor/frontend_design/slick/slick-theme.css') }}">
@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="{{ url('/') }}" class="navbar-brand">The Town</a>
+              <a href="{{ url('/') }}" class="navbar-brand">TWBF</a>
           </div>             
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +50,9 @@
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">The Town</h2>
+            <h2 class="tm-hero-title">TWBF</h2>
             <p class="tm-hero-subtitle">
-              Parallax Bootstrap Theme
-              <br />by TemplateMo
+              The World Brahmin Foundation
             </p>
         </div>        
       </div>

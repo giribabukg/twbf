@@ -11,22 +11,14 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/intro', function () {
-    return view('intro');
-});
-
-Route::get('/test', function () {
-    return view('test');
-});
-
 Route::get('/admin/users', 'UsersController@index') -> name('index');
-
-Auth::routes();
 
 Route::get('/home', function() {
     return view('adminhome');
-})->name('adminhome')->middleware('auth');
+}) -> name('adminhome') -> middleware('auth');
