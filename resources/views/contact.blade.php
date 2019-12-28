@@ -16,13 +16,13 @@
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
               <a href="tel:0100200340" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-phone mr-4"></i>
-                  <span class="mb-0">010-020-0340</span>
+                  <span class="mb-0">9712312345</span>
               </a>              
             </div>
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
               <a href="mailto:info@company.co" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-envelope mr-4"></i>
-                  <span class="mb-0">info@company.co</span>
+                  <span class="mb-0">twbf@gmail.com</span>
               </a>              
             </div>
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
@@ -31,11 +31,11 @@
                   <span class="mb-0">Location on Maps</span>
               </a>              
             </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+<!--             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
               <form action="" method="get">
                 <input name="email" type="email" placeholder="Subscribe your email" class="tm-input" required />
                 <button type="submit" class="btn tm-btn-submit">Submit</button>
               </form>
             </div>
-        </div>
+ -->        </div>
       </div>

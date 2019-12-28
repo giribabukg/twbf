@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMailable;
+
 class RegisterController extends Controller
 {
     /*
@@ -71,7 +74,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $userData = [
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -85,7 +88,32 @@ class RegisterController extends Controller
             'constituency' => $data['constituency'],
             'ward_no' => $data['ward_no'],
             'voter_id' => $data['voter_id']
-        ]);
+        ];
+
+        $user = User::create($userData);
+
+        $toWelEmail = $data['email'];
+        $toRegNotifEmail = 'dikshan.giribabu@gmail.com';
+
+        $toWelEmailData = [
+            'email_template' => 'emails.welcome',
+            'receiver_name' => $data['name'],
+            'subject' => 'TWBF - Welcome Email',
+        ];
+
+        $regNotifDataTmp = [
+            'email_template' => 'emails.regnotif',
+            'receiver_name' => 'Webadmin',
+            'subject' => 'TWBF - Registration Notification',
+        ];
+
+        $regNotifData = $regNotifDataTmp + $userData;
+
+        Mail::to($toWelEmail)->send(new SendMailable($toWelEmailData));
+
+        Mail::to($toRegNotifEmail)->send(new SendMailable($regNotifData));
+
+        return $user;
     }
 
     public function register(Request $request)
@@ -97,7 +125,7 @@ class RegisterController extends Controller
         // $this->guard()->login($user);
 
         return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath())->with('success','Registered successfully!');
+                        ?: redirect($this->redirectPath());
     }
 
 }

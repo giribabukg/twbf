@@ -20,6 +20,6 @@ class UsersController extends Controller
 
   public function index() {
 		$users = User::latest()->paginate(10);
-		return view('index',compact('users'))->with('i', (request()->input('page', 1) - 1) * 3);
+		return view('index',compact('users'))->with('i', (request()->input('page', 1) - 1) * 10);
   }
 }

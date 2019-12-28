@@ -13,7 +13,7 @@
       @include('contact')
       <footer class="text-center small tm-footer">
           <p class="mb-0">
-            Copyright &copy; 2019 Company Name - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+            Copyright &copy; 2019 TWBF Powered By <a rel="nofollow" href="http://www.dikshainfotech.in" class="tm-footer-link" target="_blank">Diksha Infotech</a>
           </p>
         </footer>
     </section>

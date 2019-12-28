@@ -9,6 +9,11 @@
 @section('adminlte_css')
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('public/vendor/datatables-bs4/css/dataTables.bootstrap4.css') }}">
+  <style type="text/css">
+  	.card {
+  		width: 1600px;
+  	}
+  </style>
 @stop
 
 @section('content')
@@ -28,6 +33,16 @@
 													<th>No.</th>
 				                  <th>Name</th>
 				                  <th>Email</th>
+				                  <th>Father Name</th>
+				                  <th>Gender</th>
+				                  <th>DOB</th>
+				                  <th>Address</th>
+				                  <th>WhatsApp No</th>
+				                  <th>District</th>
+				                  <th>Constituency</th>
+				                  <th>Ward No</th>
+				                  <th>Voter ID</th>
+				                  <th>Registered On</th>
 				                </tr>
 				                </thead>
 				                <tbody>
@@ -35,6 +50,7 @@
 					                <tr>
 														<td>{{ ++$i }}</td>
 					                  <td>{{ $user -> name}}</td>
+					                  <td>{{ $user -> email}}</td>
 					                  <td>{{ $user -> father_name}}</td>
 					                  <td>{{ $user -> gender}}</td>
 					                  <td>{{ $user -> dob}}</td>
@@ -44,6 +60,7 @@
 					                  <td>{{ $user -> constituency}}</td>
 					                  <td>{{ $user -> ward_no}}</td>
 					                  <td>{{ $user -> voter_id}}</td>
+					                  <td>{{ $user -> created_at}}</td>
 					                </tr>
 					                @endforeach
 				                </tbody>
