@@ -24,7 +24,6 @@
 					            <form action="{{ $register_url }}" method="post">
 					                {{ csrf_field() }}
 
-
 													<div class="form-group row">
 													  <label for="inputFullName" class="col-sm-2 col-form-label">{{ __('adminlte::adminlte.full_name') }} <i class="fa fa-asterisk text-danger pl-1"></i></label>
 													  <div class="col-sm-6">
@@ -74,7 +73,7 @@
 													<div class="form-group row">
 													  <label for="inputAddress" class="col-sm-2 col-form-label">{{ __('adminlte::adminlte.address') }}</label>
 													  <div class="col-sm-6">
-													    <input type="text" name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" id="inputAddress" value="{{ old('address') }}">
+													    <textarea name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" id="inputAddress" >{{ old('address') }}</textarea>
 					                    @if ($errors->has('address'))
 					                        <div class="invalid-feedback">
 					                            <strong>{{ $errors->first('address') }}</strong>
@@ -86,7 +85,7 @@
 													<div class="form-group row">
 													  <label for="inputMobile" class="col-sm-2 col-form-label">{{ __('adminlte::adminlte.mobile') }}<i class="fa fa-asterisk text-danger pl-1"></i></label>
 													  <div class="col-sm-6">
-													    <input type="number" name="mobile" class="form-control {{ $errors->has('mobile') ? 'is-invalid' : '' }}" id="inputMobile" value="{{ old('mobile') }}" pattern="[6789][0-9]{9}">
+													    <input type="number" name="mobile" class="form-control {{ $errors->has('mobile') ? 'is-invalid' : '' }}" id="inputMobile" value="{{ old('mobile') }}" pattern="[56789][0-9]{9}">
 					                    @if ($errors->has('mobile'))
 					                        <div class="invalid-feedback">
 					                            <strong>{{ $errors->first('mobile') }}</strong>
@@ -98,7 +97,7 @@
 													<div class="form-group row">
 													  <label for="inputWhatsApp" class="col-sm-2 col-form-label">{{ __('adminlte::adminlte.whatsapp_no') }}</label>
 													  <div class="col-sm-6">
-													    <input type="number" name="whatsapp_no" class="form-control {{ $errors->has('whatsapp_no') ? 'is-invalid' : '' }}" id="inputWhatsApp" value="{{ old('whatsapp_no') }}">
+													    <input type="number" name="whatsapp_no" class="form-control {{ $errors->has('whatsapp_no') ? 'is-invalid' : '' }}" id="inputWhatsApp" value="{{ old('whatsapp_no') }}" pattern="[56789][0-9]{9}">
 					                    @if ($errors->has('whatsapp_no'))
 					                        <div class="invalid-feedback">
 					                            <strong>{{ $errors->first('whatsapp_no') }}</strong>

@@ -22,3 +22,6 @@ Route::get('/admin/users', 'UsersController@index') -> name('index');
 Route::get('/home', function() {
     return view('adminhome');
 }) -> name('adminhome') -> middleware('auth');
+
+Route::get('/send', 'Reg2Controller@mail');
+Route::get('/regsuc', 'Reg2Controller@regsuc');

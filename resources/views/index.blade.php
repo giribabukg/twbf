@@ -35,7 +35,15 @@
 					                <tr>
 														<td>{{ ++$i }}</td>
 					                  <td>{{ $user -> name}}</td>
-					                  <td>{{ $user -> email}}</td>
+					                  <td>{{ $user -> father_name}}</td>
+					                  <td>{{ $user -> gender}}</td>
+					                  <td>{{ $user -> dob}}</td>
+					                  <td>{{ $user -> address}}</td>
+					                  <td>{{ $user -> whatsapp_no}}</td>
+					                  <td>{{ $user -> district}}</td>
+					                  <td>{{ $user -> constituency}}</td>
+					                  <td>{{ $user -> ward_no}}</td>
+					                  <td>{{ $user -> voter_id}}</td>
 					                </tr>
 					                @endforeach
 				                </tbody>
