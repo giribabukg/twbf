@@ -39,10 +39,10 @@
                   <a class="nav-link tm-nav-link" href="#work">Our Work</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="{{ url('/register') }}">Register</a>
+                  <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
+                  <a class="nav-link tm-nav-link" href="{{ url('/register') }}">Register</a>
               </li>
             </ul>
           </div>        
