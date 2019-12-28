@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TWBF - The World Brahmin Foundation</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="{{ asset('public/vendor/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/vendor/frontend_design/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('public/vendor/frontend_design/slick/slick-theme.css') }}">
